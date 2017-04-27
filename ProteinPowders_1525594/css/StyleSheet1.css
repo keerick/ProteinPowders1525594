@@ -1,0 +1,35 @@
+﻿#content {
+    background: url("");
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 100%;
+    background-attachment: fixed;
+    width: 1000px;
+    padding-left:200px;
+}
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+#top_nav {
+    text-align: center;
+}
+
+#banner {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+footer {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+#map {
+}
