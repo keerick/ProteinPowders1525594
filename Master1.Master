@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master1.master.cs" Inherits="ProteinPowders_1525594.Master1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet1.css" runat="server" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #Top_Nav {
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+    <div id="banner">
+        <img src="~/images/ProteinBanner.jpg" alt="" runat="server" />
+    </div>
+    <div id="Top_Nav">
+        <a href="default.aspx">Home</a>| 
+        <a href="#">Product</a>|
+        <a href="contact.aspx">Contact</a>|
+        <a href="Management.aspx">Management</a>
+        <a href="Login.aspx">Login</a>
+        <a href="Register.aspx">Register</a>
+
+        <li style="float:right">
+           <asp:HyperLink ID="lnkRegister" NavigateUrl="Register.aspx" runat="server">Register</asp:HyperLink>
+           <asp:HyperLink ID="litStatus" runat="server"></asp:HyperLink>
+        </li>
+
+        <li style="float:right">
+           <asp:HyperLink ID="lnkLogin" NavigateUrl="Login.aspx" runat="server">Log In</asp:HyperLink>
+            <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click1">Log Out</asp:LinkButton>
+        </li>
+
+    </div>
+        </div>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer>
+        Validator <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>  <a href="http://achecker/ca/checker/?uri=referer">Check WCAG</a>
+        | Admin: <a href="~/login.aspx" runat="server">Login</a>
+    </footer>
+
+</body>
+</html>
